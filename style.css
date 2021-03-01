@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+li:not(:last-child) {
+  margin-right: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
