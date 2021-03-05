@@ -20,7 +20,6 @@ const users = [
 const toggleUserState = (allUsers, userName) => {
   return new Promise((resolve, reject) => {
     resolve({ allUsers, userName });
-    reject("Произошла ошибка");
   });
 };
 

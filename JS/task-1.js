@@ -3,16 +3,15 @@
 // Значением исполнившегося промиса должно быть то кол - во миллисекунд
 // которое передали во время вызова функции delay
 
-const delay = (ms) => {
+const delay = ms => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(ms);
-      reject("Error!");
     }, ms);
   });
 };
 
-const logger = (time) => console.log(`Resolved after ${time}ms`);
+const logger = time => console.log(`Resolved after ${time}ms`);
 
 delay(2000).then(logger); // Resolved after 2000ms
 delay(1000).then(logger); // Resolved after 1000ms
